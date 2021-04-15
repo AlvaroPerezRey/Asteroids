@@ -143,7 +143,7 @@ class Asteroids:
     MAX_ASTEROIDS = 15
     MUSIC = "music/tota_pop.ogg"
     WINDOW_TITLE = "Albert[A]steroids"
-    BACKGROUND = "class_diagram"
+    BACKGROUND = "background"
     VICTORY_TEXT = "Victory!!!!!!!!!"
     GAME_OVER_TEXT = "Game Over"
 
@@ -153,9 +153,9 @@ class Asteroids:
     def _init_game(self):
         pygame.init()
         pygame.mixer.init()
-        pygame.mixer.music.load(self.MUSIC)
+        #pygame.mixer.music.load(self.MUSIC)
         # loops=-1 for infinite playing
-        pygame.mixer.music.play(loops=-1)
+        #pygame.mixer.music.play(loops=-1)
         pygame.display.set_caption(self.WINDOW_TITLE)
         # when attribute name starts with _ (underscore), marks that attribute as protected
         self._font = pygame.font.Font(None, 64)
