@@ -77,7 +77,7 @@ class Asteroid(GameObject):
 
 
 class Bullet(GameObject):
-    BULLET_SPEED = 6
+    BULLET_SPEED = 18
 
     def __init__(self, star_ship):
         super().__init__(star_ship.screen_size,
@@ -93,9 +93,9 @@ class Bullet(GameObject):
 
 
 class StarShip(GameObject):
-    MANEUVERABILITY = 3
-    FORCE = 0.1
-    SPEED_LIMIT = 3
+    MANEUVERABILITY = 2 #maniobrabilidad cambiada
+    FORCE = 0.08 #fuerza de la nave cambiada
+    SPEED_LIMIT = 1.3 #velocidad cambiada
     SPRITES = {"normal": "star_ship.v2",
                "thrust": "star_ship.v2.thrust",
                "brake": "star_ship.v2.brake",
@@ -139,8 +139,8 @@ class StarShip(GameObject):
 
 
 class Asteroids:
-    SIZE = Vector2(1024, 768)  # Display (width, height)
-    MAX_ASTEROIDS = 15
+    SIZE = Vector2(1024, 668)  # Display (width, height) #Cambiado el tamaño de la ventana
+    MAX_ASTEROIDS = 35 #Incrementado el numero de asteroides
     MUSIC = "music/tota_pop.ogg"
     WINDOW_TITLE = "Albert[A]steroids"
     BACKGROUND = "background"
